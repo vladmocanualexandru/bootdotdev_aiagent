@@ -1,6 +1,22 @@
 import os
 from config import MAX_FILE_READ_CHARS
 
+schema_get_file_content = {
+    "type": "function",
+    "function": {
+        "name": "get_file_content",
+        "description": f"Lists the contents of the specified file, relative to the working directory. Content size is limited to {MAX_FILE_READ_CHARS} characters",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "file_path": {
+                    "type": "string",
+                    "description": "Path of the file from which content should be listed, relative to the working directory (default is the working directory itself)",
+                },
+            },
+        },
+    },
+}
 
 def get_file_content(working_dir: str, file_path: str) -> str:
 
