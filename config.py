@@ -1,4 +1,5 @@
 MAX_FILE_READ_CHARS = 10000
+MAX_LLM_ITERATIONS = 20
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 OPENROUTER_MODEL = "openrouter/free"
