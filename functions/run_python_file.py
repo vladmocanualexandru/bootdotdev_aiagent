@@ -13,10 +13,10 @@ schema_run_python_file = {
                     "type": "string",
                     "description": "Path of the Python/*.py file that should be executed, relative to the working directory (default is the working directory itself)",
                 },
-                # "args": {
-                #     "type": "list of strings",
-                #     "description": "List of parameters that are to be sent to the Python file upon execution.",
-                # },
+                "args": {
+                    "type": "list of strings",
+                    "description": "List of parameters that are to be sent to the Python file upon execution.",
+                },
             },
         },
     },
