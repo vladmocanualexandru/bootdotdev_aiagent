@@ -1,9 +1,9 @@
 import os
 
-schema_write_file = {
+schema_write = {
     "type": "function",
     "function": {
-        "name": "write_file",
+        "name": "write",
         "description": "Write the specified content inside the indicated file, relative to the working directory.",
         "parameters": {
             "type": "object",
@@ -21,7 +21,7 @@ schema_write_file = {
     },
 }
 
-def write_file(working_dir: str, file_path: str, content: str) -> str:
+def write(working_dir: str, file_path: str, content: str) -> str:
     try:
         working_dir_abs = os.path.abspath(working_dir)
         target_file = os.path.normpath(os.path.join(working_dir_abs, file_path))

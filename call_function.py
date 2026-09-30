@@ -4,23 +4,23 @@ from collections.abc import Callable
 from termcolor import colored
 from flavor.colors import COLORS
 
-from functions.get_files_info import get_files_info, schema_get_files_info
-from functions.get_file_content import get_file_content, schema_get_file_content
-from functions.run_python_file import run_python_file, schema_run_python_file
-from functions.write_file import write_file, schema_write_file
+from functions.browse import browse, schema_browse
+from functions.read import read, schema_read
+from functions.execute import execute, schema_execute
+from functions.write import write, schema_write
 
 available_functions = [
-    schema_get_files_info,
-    schema_get_file_content,
-    schema_run_python_file,
-    schema_write_file
+    schema_browse,
+    schema_read,
+    schema_execute,
+    schema_write
 ]
 
 function_map: dict[str, Callable[..., str]] = {
-    "get_files_info": get_files_info,
-    "get_file_content": get_file_content,
-    "run_python_file": run_python_file,
-    "write_file": write_file
+    "browse": browse,
+    "read": read,
+    "execute": execute,
+    "write": write
 }
 def call_function(tool_call, working_directory:str, verbose: bool = False) -> dict:
     function_name = tool_call.function.name

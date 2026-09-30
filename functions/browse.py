@@ -1,9 +1,9 @@
 import os
 
-schema_get_files_info = {
+schema_browse = {
     "type": "function",
     "function": {
-        "name": "get_files_info",
+        "name": "browse",
         "description": "Lists files in a specified directory relative to the working directory, providing file size and directory status",
         "parameters": {
             "type": "object",
@@ -17,7 +17,7 @@ schema_get_files_info = {
     },
 }
 
-def get_files_info(working_dir:str, directory:str|None='.') -> str:
+def browse(working_dir:str, directory:str|None='.') -> str:
     try:
         working_dir_abs = os.path.abspath(working_dir)
         target_dir = os.path.normpath(os.path.join(working_dir_abs, directory))

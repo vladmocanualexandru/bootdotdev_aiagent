@@ -1,10 +1,10 @@
 import os
 from config import MAX_FILE_READ_CHARS
 
-schema_get_file_content = {
+schema_read = {
     "type": "function",
     "function": {
-        "name": "get_file_content",
+        "name": "read",
         "description": f"Lists the contents of the specified file, relative to the working directory. Content size is limited to {MAX_FILE_READ_CHARS} characters",
         "parameters": {
             "type": "object",
@@ -18,7 +18,7 @@ schema_get_file_content = {
     },
 }
 
-def get_file_content(working_dir: str, file_path: str) -> str:
+def read(working_dir: str, file_path: str) -> str:
 
     try:
         working_dir_abs = os.path.abspath(working_dir)

@@ -1,10 +1,10 @@
 import os
 import subprocess
 
-schema_run_python_file = {
+schema_execute = {
     "type": "function",
     "function": {
-        "name": "run_python_file",
+        "name": "execute",
         "description": "Execute the indicated python file, relative to the working directory.",
         "parameters": {
             "type": "object",
@@ -22,7 +22,7 @@ schema_run_python_file = {
     },
 }
 
-def run_python_file(working_dir: str, file_path: str, args: list[str] | None = None) -> str:
+def execute(working_dir: str, file_path: str, args: list[str] | None = None) -> str:
     try:
         working_dir_abs = os.path.abspath(working_dir)
         target_file = os.path.normpath(os.path.join(working_dir_abs, file_path))
