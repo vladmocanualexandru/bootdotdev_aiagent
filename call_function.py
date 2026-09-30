@@ -26,12 +26,6 @@ def call_function(tool_call, working_directory:str, verbose: bool = False) -> di
     function_name = tool_call.function.name
     function_args = json.loads(tool_call.function.arguments or "{}")
 
-    if verbose:
-        print(colored(f"Calling function... ({function_name}({function_args}))", COLORS.FUNCTION_CALLING))
-    else:
-        args_as_string = json.dumps(function_args)
-        print(colored(f"Calling function... ({function_name}({args_as_string[:100]+("..." if len(args_as_string)>100 else "")}))", COLORS.FUNCTION_CALLING))
-
     if not function_name in function_map:
         return {
             "role": "tool",

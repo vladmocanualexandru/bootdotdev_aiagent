@@ -1,0 +1,15 @@
+Fire Dragon,Attack:8,Defense:6,Element:Fire,Rarity:Rare,A powerful dragon that breathes scorching flames
+Water Nymph,Attack:5,Defense:9,Element:Water,Rarity:Uncommon,A graceful nymph that controls tidal waves
+Earth Golem,Attack:7,Defense:8,Element:Earth,Rarity:Common,A sturdy golem made of living stone
+Air Sprite,Attack:6,Defense:5,Element:Air,Rarity:Common,A quick sprite that rides the wind
+Light Angel,Attack:9,Defense:7,Element:Light,Rarity:Legendary,A divine being of pure radiant energy
+Dark Demon,Attack:8,Defense:7,Element:Dark,Rarity:Epic,A shadowy demon that feeds on fears
+Nature Elf,Attack:6,Defense:6,Element:Nature,Rarity:Uncommon,A forest elf who commands vines and thorns
+Ice Wizard,Attack:5,Defense:7,Element:Ice,Rarity:Rare,A master of frost who freezes enemies in place
+Thunder God,Attack:10,Defense:4,Element:Thunder,Rarity:Legendary,A deity of storms who wields lightning bolts
+Shadow Assassin,Attack:7,Defense:5,Element:Shadow,Rarity:Epic,A silent killer who strikes from darkness
+Holy Paladin,Attack:8,Defense:9,Element:Holy,Rarity:Rare,A righteous knight blessed by divine light
+Poison Alchemist,Attack:4,Defense:5,Element:Poison,Rarity:Uncommon,A mad scientist who creates deadly toxins
+Crystal Guardian,Attack:6,Defense:10,Element:Crystal,Rarity:Epic,A living crystal entity with immense durability
+Wind Archer,Attack:7,Defense:6,Element:Wind,Rarity:Common,A skilled archer whose arrows ride the gale
+Stone Titan,Attack:9,Defense:9,Element:Stone,Rarity:Legendary,A colossal titan made of living bedrock
